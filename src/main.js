@@ -5,6 +5,7 @@ import App from './App'
 import './mock'
 
 import router from './router'
+import store from './store'
 
 /* eslint-disable no-new */
 new Vue({
@@ -16,7 +17,8 @@ new Vue({
   template: '<App/>',*/
   render: h => h(App),
   // 配置路由器
-  router
+  router,
+  store
 })
 
 ;(function () {

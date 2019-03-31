@@ -8,7 +8,7 @@
       <i class="iconfont icon-category"></i>
       <span>分类</span>
     </a>
-    <a href="javascript:;" class="item" @click="goto('/search')" :class="{on: this.$route.path === '/search'}">
+    <a href="javascript:;" class="item" @click="goto('/identify')" :class="{on: this.$route.path === '/identify'}">
       <i class="iconfont icon-cubelifangti"></i>
       <span>识物</span>
     </a>

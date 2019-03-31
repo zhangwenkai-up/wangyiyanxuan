@@ -4,4 +4,3 @@ import ajax from './ajax'
 export const reqShouye = () => ajax('/shouye')
 export const reqFenlei = () => ajax('/fenlei')
 export const reqShiwu = () => ajax('/shiwu')
-

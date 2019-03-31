@@ -1,7 +1,8 @@
 // 包含所有路由的数组
 import Msite from '../pages/Msite/Msite'
-import Classify from '../pages/Classify/Classify'
 import Search from '../pages/Search/Search'
+import Classify from '../pages/Classify/Classify'
+import Identify from '../pages/Identify/Identify'
 import Order from '../pages/Order/Order'
 import Profile from '../pages/Profile/Profile'
 
@@ -14,6 +15,10 @@ export default [
     }
   },
   {
+    path: '/search',
+    component: Search,
+  },
+  {
     path: '/classify',
     component: Classify,
     meta: {
@@ -21,8 +26,8 @@ export default [
     }
   },
   {
-    path: '/search',
-    component: Search,
+    path: '/identify',
+    component: Identify,
     meta: {
       isShow: true
     }
