@@ -14,7 +14,7 @@
 <script>
   import Footer from './compotents/Footer/Footer'
 
-  import {reqShouye, reqFenlei, reqShiwu} from './api'
+  import {reqShouye, reqFenlei, reqShiwu, reqSearch} from './api'
 
   export default {
     components: {
@@ -25,11 +25,14 @@
       const result0 = await reqShouye()
       const result1 = await reqFenlei()
       const result2 = await reqShiwu()
+      const result3 = await reqSearch()
       console.log(result0);
       console.log('--------------------');
       console.log(result1);
       console.log('--------------------');
       console.log(result2);
+      console.log('--------------------');
+      console.log(result3);
       console.log('--------------------');
     }
   }

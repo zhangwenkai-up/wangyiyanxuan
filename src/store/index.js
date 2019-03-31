@@ -11,7 +11,7 @@ import search from './modules/search'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  modelus: {
+  modules: {
     msite,
     classify,
     identify,
