@@ -1,22 +1,27 @@
 <template>
   <footer class="footer">
-    <a href="javascript:;" class="item" @click="goto('/msite')" :class="{on: this.$route.path === '/msite'}">
+    <a href="javascript:;" class="item" @click="goto('/msite')"
+       :class="{on: this.$route.path.includes('msite')}">
       <i class="iconfont icon-shouye"></i>
       <span>首页</span>
     </a>
-    <a href="javascript:;" class="item" @click="goto('/classify')" :class="{on: this.$route.path === '/classify'}">
+    <a href="javascript:;" class="item" @click="goto('/classify')"
+       :class="{on: this.$route.path.includes('classify')}">
       <i class="iconfont icon-category"></i>
       <span>分类</span>
     </a>
-    <a href="javascript:;" class="item" @click="goto('/identify')" :class="{on: this.$route.path === '/identify'}">
+    <a href="javascript:;" class="item" @click="goto('/identify')"
+       :class="{on: this.$route.path.includes('identify')}">
       <i class="iconfont icon-cubelifangti"></i>
       <span>识物</span>
     </a>
-    <a href="javascript:;" class="item" @click="goto('/order')" :class="{on: this.$route.path === '/order'}">
+    <a href="javascript:;" class="item" @click="goto('/order')"
+       :class="{on: this.$route.path.includes('order')}">
       <i class="iconfont icon-gouwuche"></i>
       <span>购物车</span>
     </a>
-    <a href="javascript:;" class="item" @click="goto('/profile')" :class="{on: this.$route.path === '/profile'}">
+    <a href="javascript:;" class="item" @click="goto('/profile')"
+       :class="{on: this.$route.path.includes('profile')}">
       <i class="iconfont icon-geren"></i>
       <span>个人</span>
     </a>

@@ -2,6 +2,7 @@
 import Msite from '../pages/Msite/Msite'
 import Search from '../pages/Search/Search'
 import Classify from '../pages/Classify/Classify'
+import ClassifyList from '../pages/Classify/ClassifyList/ClassifyList'
 import Identify from '../pages/Identify/Identify'
 import Order from '../pages/Order/Order'
 import Profile from '../pages/Profile/Profile'
@@ -9,41 +10,39 @@ import Profile from '../pages/Profile/Profile'
 export default [
   {
     path: '/msite',
-    component: Msite,
-    meta: {
-      isShow: true
-    }
+    component: Msite
   },
   {
     path: '/search',
     component: Search,
+    meta: {
+      hide:true
+    }
   },
   {
     path: '/classify',
     component: Classify,
-    meta: {
-      isShow: true
-    }
+    redirect: '/classify/classifylist/1022001',
+    children: [
+      {
+        path: '/classify/classifylist/:id',
+        component: ClassifyList
+      }
+    ]
   },
   {
     path: '/identify',
-    component: Identify,
-    meta: {
-      isShow: true
-    }
+    component: Identify
   },
   {
     path: '/order',
-    component: Order,
-    meta: {
-      isShow: true
-    }
+    component: Order
   },
   {
     path: '/profile',
     component: Profile,
     meta: {
-      isShow: true
+      hide:true
     }
   },
   {

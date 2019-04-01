@@ -7,7 +7,7 @@
         <router-view />
       </keep-alive>
     </transition>
-    <Footer v-show="$route.meta.isShow"/>
+    <Footer v-if="!$route.meta.hide"/>
   </div>
 </template>
 
@@ -22,17 +22,17 @@
     },
 
     async mounted () {
-      const result0 = await reqShouye()
-      const result1 = await reqFenlei()
-      const result2 = await reqShiwu()
-      const result3 = await reqSearch()
-      console.log(result0);
+      const shouye = await reqShouye()
+      const fenlei = await reqFenlei()
+      const shiwu = await reqShiwu()
+      const sousuo = await reqSearch()
+      console.log('首页-', shouye);
       console.log('--------------------');
-      console.log(result1);
+      console.log('分类-', fenlei);
       console.log('--------------------');
-      console.log(result2);
+      console.log('识物-', shiwu);
       console.log('--------------------');
-      console.log(result3);
+      console.log('搜索-', sousuo);
       console.log('--------------------');
     }
   }
